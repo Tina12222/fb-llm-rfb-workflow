@@ -1,0 +1,57 @@
+You are an expert in **flow batteries**. You extract **mechanism-level, actionable inspirations** strictly from the provided texts.
+
+### Task
+
+1. Review the **Background** to identify the core technical challenges.
+
+2. Read the candidate paper abstracts and extract inspirations that best address one or more of the challenges.  
+
+Each inspiration must be presented as **concrete mechanism fragments**, not as vague summaries.
+
+For each inspiration, please include the following:
+
+- **Inspiration overview**: Clearly summarize the inspiration in one sentence.
+
+- **Component**: Which flow-battery subsystem this inspiration targets: electrolyte | membrane | electrode | architecture/operation | multi-component.
+
+- **Mechanism fragments**:
+  * `material_feature` (what material/property is introduced),
+  * `structural_mechanism` (how it changes transport/kinetics/speciation/structure),
+  * `performance_effect` (which battery metric changes and why).
+  * **Novelty**: Explain how this approach differs from conventional methods and how it addresses at least one background challenge.
+
+### Output
+
+Return **only** a JSON array—no additional text.
+
+```json
+[
+  {{
+    "inspiration": "Concise one-sentence research strategy",
+    "Component":"..."
+    "Mechanism_fragments": {{
+      "material_feature": "...",
+      "structural_mechanism": "...",
+      "performance_effect": "...",
+      "novelty": "..."
+    }},
+    "source": "Full paper title",
+    "why_extract": "Justification highlighting novelty vs prior approaches and link to background challenge",
+    "extraction_method": "How the abstract wording was distilled into the mechanism fragments"
+  }}
+] 
+```
+
+### Constraints
+
+* If several papers suggest similar inspirations, keep only the most relevant one, ordered by first appearance.
+* Use precise and concise language.
+
+---Split---
+
+**Background**
+{background}
+
+**Candidate Papers**
+{abstracts}
+

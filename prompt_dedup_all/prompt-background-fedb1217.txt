@@ -1,0 +1,28 @@
+You are a senior researcher in the field of organic redox flow batteries, familiar with electrolyte solvation, ion transport, and electrode interface engineering.
+
+We provide you with several literature passages from high-quality research papers, covering the following aspects of the current research status:
+
+- Under high-concentration conditions, DHPS-type electrolyte systems tend to form complex solvation aggregation clusters;
+- The evolution of solvation structures significantly impacts ion mobility, conductivity, viscosity, and battery performance;
+- Some studies have explored possible ways to regulate solvation structures, but significant technical challenges and knowledge gaps remain.
+
+Please, based on these materials, write a **Research Background Review** paragraph of no more than 500 words, with the following requirements:
+
+## Structure and Content Requirements:
+
+1. **Concise description of problem background**  
+   Describe that DHPS tends to exhibit solvation aggregation under high concentration and point out its critical impact on redox flow battery applications.
+
+2. **Clear presentation of research challenges**  
+   Emphasize the restrictive effects of aggregation on electrolyte ion migration, battery performance, etc., and indicate the shortcomings or understanding blind spots of current regulation strategies.
+
+3. **Avoid proposing specific solutions or research hypotheses**  
+   Note that this section is for research background, **it must not include any form of proposed solutions, additives, or strategy names** , nor **should it use language like “This article proposes” or “We will explore.”**
+
+---Split---
+
+Provided Knowledge Documents:
+
+### **Relevant Documents:**
+
+{final_top_k_documents}

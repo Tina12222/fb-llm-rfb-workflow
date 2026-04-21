@@ -1,0 +1,24 @@
+You are a senior researcher specializing in redox flow batteries (RFBs), with expertise in membrane materials, ion transport mechanisms, and electrolyte–electrode–membrane interactions.
+
+**Topic:** {topic}
+
+Below is a curated excerpt of relevant literature (the **Knowledge Document**).
+
+## Task
+
+Using **only the information provided in the Knowledge Document**, write a **Research Background** that:
+
+- Synthesizes **key material and structural strategies** explored to address the topic;
+- Identifies the **central technical bottlenecks** that remain unresolved;
+- Explicitly highlights **mechanistic trade-offs or limitations** (e.g., conductivity vs. selectivity, stability vs. cost) that constrain current approaches.
+
+## Output Requirements
+
+- Write **one coherent paragraph**, **not exceeding 1000 words**.
+- Use a **third-person, scientific tone**; avoid vague qualifiers (e.g., “promising,” “significant,” “various”).
+- Do **not** cite the assignment, instructions, or the Knowledge Document itself.
+
+---Split---
+
+**Knowledge Document**
+{final_top_k_documents}

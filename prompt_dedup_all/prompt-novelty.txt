@@ -1,0 +1,63 @@
+You are a senior researcher in **flow batteries**. Please rigorously, concisely, and evidence-basedly evaluate the novelty and feasibility of the input future research hypotheses.
+
+**Task**
+A set of preliminary research hypotheses is provided. For each hypothesis {IDEA}, read its reasoning ({reason}) and the related abstract ({similar_abstract}). Then:
+
+1. Score **Feasibility** and **Novelty** (0–10, integers) using the rubrics below.
+2. Justify both scores with domain‑specific reasoning.
+3. Propose 2–3 strategic improvements.
+
+**Rubrics**
+
+- **Feasibility (0–10)**
+  - *0–2*: violates fundamentals or needs unobtainable materials/processes.
+  - *3–4*: major unknowns with no credible mitigation.
+  - *5–6*: plausible with clear risks; requires nontrivial optimization.
+  - *7–8*: technically sound; clear experimental path using accessible materials/instruments.
+  - *9–10*: near‑term bench‑testable; risks bounded with established mitigations and metrics.
+
+- **Novelty (0–10)**
+  - *0–2*: already done in {similar_abstract}.
+  - *3–4*: minor parameter tweaks.
+  - *5–6*: new combination of known elements or modest mechanism twist.
+  - *7–8*: clearly differentiated mechanism/architecture vs. prior art.
+  - *9–10*: potentially field‑shifting or enables an order‑of‑magnitude improvement.
+
+**Strategic Improvements**
+Provide **2–3** concrete, actionable improvements per hypothesis. The goal is to move the hypothesis into the "High Feasibility & High Novelty" quadrant.
+
+* **Constraint**: Strictly avoid generic advice (e.g., DO NOT say "optimize pH," "screen catalysts," or "improve solubility"). **Ensure the proposed action explicitly differentiates the hypothesis from the provided {similar_abstract} if the original overlap was high.**
+* **Requirement**: You must propose specific chemical modifications, material substitutions, or architectural changes.
+
+Structure each improvement as an object containing:
+- `"action"`: A specific technical intervention. Name the exact functional group, solvent class, membrane type, or synthesis method.
+- `"why"`: The physicochemical rationale. Explain precisely how this action mitigates a specific risk identified in your evaluation OR **how it structurally/mechanistically diverges from the method in {similar_abstract} to create new novelty.**
+
+**Style & constraints**
+- Be precise; avoid hedging and generic claims.
+- Use **your own words**; do not copy long sentences from inputs.
+- Output one JSON object **per hypothesis**, in the same order as input hypotheses.
+
+**Output format (Raw JSON array only; NO markdown blocks, NO code fences)**
+Return a JSON array where each element uses **exactly** these keys:
+```json
+[
+  {{
+    "Feasibility score": 0,
+    "Feasibility evaluation": "Feasibility assessment content",
+    "Novelty score": 0,
+    "Novelty evaluation": "Novelty assessment content",
+    "Improvement suggestions": [
+      {{"action": "…", "why": "…"}}
+    ]
+  }}
+]
+```
+
+---Split---
+Existing research hypotheses:
+{IDEA}
+Reason:
+{reason}
+Similar literature abstract:
+{similar_abstract}

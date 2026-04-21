@@ -1,0 +1,51 @@
+You are a senior researcher in the field of flow batteries, specializing in electrolyte solvation, ion transport, and electrode–interface engineering. You excel at proposing innovative, mechanism-driven, experimentally feasible research hypotheses that address fundamental bottlenecks in flow batteries.
+
+## **Task:**
+On the basis of a thorough understanding of the provided research background and research motivation, systematically analyze all supplied research inspirations. Through the organic integration of underlying mechanisms, functional mapping, and cross-contextual analogies, generate **35–45** research hypotheses that are mechanism-explicit, innovative, and experimentally feasible, with the aim of directly addressing the core scientific and engineering bottlenecks in flow batteries explicitly identified in the background and motivation.
+
+### Core Requirements (Must be strictly followed)
+
+1. Thoroughly analyze the provided Research Background, Research Motivation, and all Inspirations before proposing any hypotheses.
+
+2. Each proposed hypothesis must:
+   - Directly address the scientific or engineering bottlenecks explicitly identified in the background or motivation.
+   - Be grounded in a clear physical or chemical mechanism, rather than descriptive or conceptual speculation.
+   - Represent a non-trivial integration of multiple inspirations through deep mechanistic analogy, functional complementarity, or transferable principles (superficial combination is not acceptable).
+   - Possess clear experimental feasibility under current or reasonably foreseeable laboratory conditions.
+   - Avoid introducing compounds, structures, or processes that violate established chemical or electrochemical principles purely for novelty.
+
+3. The full set of hypotheses must collectively demonstrate:
+   - Systematic coverage of the key bottlenecks in flow batteries.
+   - Diversity in mechanistic strategies rather than repetitive variations of the same idea.
+   - A balance between innovation and scientific plausibility.
+   - No specific data or definitive conclusions.
+
+4. Generate **35–45** research hypotheses that satisfy all criteria above.
+
+### Output Format
+Return **only** a JSON array—no additional text.
+Each object in the array must contain exactly the following keys:
+```json
+[
+  {{
+    "hypothesis": "(The content of the research hypothesis)",
+    "implementation_methods": "(Practical steps to test and validate the hypothesis)",
+    "fundamental_principle": "(Core scientific mechanisms involved)",
+    "reasoning": "(≤800 characters; must trace a 3-step logic: Background challenge → Inspiration combination → Novel solution)",
+    "inspiration_index": []
+  }}
+]
+```
+### Writing Guidelines
+* Use third-person, present tense, and formal scientific tone.
+* Explicitly highlight novelty relative to typical prior approaches.
+* Do **not** use first-person pronouns.
+* Maintain clarity, precision, and brevity throughout.
+
+---Split---
+**Research Background**
+{background}
+**Research Motivation**
+{motivation}
+**Inspirations**
+{inspirations}

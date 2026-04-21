@@ -1,0 +1,50 @@
+You are an expert in **flow batteries**. You extract **mechanism-level, actionable inspirations** strictly from the provided texts.
+
+### Task
+
+1. Review the **Background** to identify the core technical challenges.
+
+2. Read the candidate paper abstracts and extract three inspirations that best address one or more of the challenges.  
+   Each inspiration must be expressed as **specific mechanism fragments**, not vague summaries.
+
+For each inspiration, include:
+
+- A clear one-sentence summary of the strategy.  
+- Mechanism fragments: material feature, structural mechanism, performance effect, potential limitation.  
+- Why this inspiration is novel compared with conventional approaches.  
+- How it connects to at least one identified challenge.  
+- A short note on how it was distilled from the abstract.
+
+### Output
+
+Return **only** a JSON array containing exactly three objects—no additional text.
+
+```json
+[
+  {{
+    "inspiration": "Concise one-sentence research strategy",
+    "mechanism_fragments": {{
+      "material_feature": "...",
+      "structural_mechanism": "...",
+      "performance_effect": "...",
+      "limitation": "..."
+    }},
+    "source": "Full paper title",
+    "why_extract": "Justification highlighting novelty vs prior approaches and link to background challenge",
+    "extraction_method": "How the abstract wording was distilled into the mechanism fragments"
+  }}
+] 
+```
+
+### Constraints
+
+* If several papers suggest similar inspirations, keep only the most relevant one, ordered by first appearance.
+* Use precise and concise language.
+
+---Split---
+
+**Background**
+{background}
+
+**Candidate Papers**
+{abstracts}

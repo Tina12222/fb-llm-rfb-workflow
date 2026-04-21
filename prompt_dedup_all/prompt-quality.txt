@@ -1,0 +1,46 @@
+You are a reviewer tasked with ranking the quality of a set of research ideas based on {quality_indicator}.
+The ideas with the highest {quality_indicator} should be ranked first.
+
+Input format (required):
+- You will receive a list of research ideas. Each idea begins with its sequence number, followed by punctuation and the idea text.
+- Supported sequence number formats include: "1.xxx".
+
+Task:
+- Parse each line to extract the following:
+- id: The original integer sequence number (keep it as is)
+- idea: The full idea text following the sequence number
+- Sort all valid ideas strictly by {quality_indicator} only.
+- Provide a strict total ranking from 1 (best) to n (worst). Do not include ties.
+- For each ranked idea, include a one-sentence rationale and mention specific aspects of the idea (e.g., mechanism, data, feasibility signal, scope of impact).
+- Do not fabricate, combine, or edit ideas. Do not cite sources.
+- If two ideas are close, distinguish them based on (i) specificity/clarity of mechanism or approach, and (ii) potential impact.
+
+Output format (strict JSON only):
+- Return only a single JSON object (UTF-8). No explanations or Markdown markup are included.
+- The JSON schema must be:
+[
+{{
+"rank": 1,
+"id": <original_serial_number_integer>,
+"idea": "<original_idea_text>",
+"rationale": "<a concise sentence citing a specific aspect>"
+}},
+{{
+"rank": 2,
+"id": ...,
+"idea": "...",
+"rationale": "..."
+}}
+]
+
+Additional rules:
+
+- Ensure valid JSON format: no trailing commas, no comments, and proper quoting.
+- Do not include Markdown code fences in the output.
+- If the input contains duplicates (idea text is identical after trimming), only the first occurrence is kept and subsequent duplicates are listed as "skipped" with the reason "duplicate".
+
+---Split---
+Idea:
+{Idea}
+quality indicator:
+{quality_indicator}

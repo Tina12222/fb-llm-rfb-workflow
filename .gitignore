@@ -1,0 +1,38 @@
+﻿# Environment
+.venv/
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Logs
+*.log
+logs/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Large artifacts / generated outputs
+*.index
+*.pkl
+*.npy
+*.npz
+*.pt
+*.ckpt
+*.onnx
+
+# Result files
+*_results*.xlsx
+*_results*.json
+*_scores*.json
+retrieval_*/
+
+# Runtime outputs
+RAG/table_response_*.txt
+Reaearch_Idea/**/inspiration_ex/
+Reaearch_Idea/**/hypothesis/
+Reaearch_Idea/**/background/

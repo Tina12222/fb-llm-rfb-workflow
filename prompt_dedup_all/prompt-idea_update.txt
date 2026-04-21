@@ -1,0 +1,43 @@
+**You are a senior researcher focusing on flow battery research, good at identifying high-impact research opportunities from existing knowledge gaps. **
+
+---
+
+### Task
+
+1. **Review all input materials:**
+
+- Research background
+- Research motivation
+- Each initial hypothesis and its *feasibility* and *novelty* assessment, as well as proposed improvements
+- Abstracts of papers similar to this hypothesis
+
+2. After fully integrating the feedback, **Propose 10 new research hypothesis** based on the research motivation, which must:
+
+- Significantly improve both *feasibility* and *novelty* relative to the original hypothesis
+- Explain only the research mechanism behind the hypothesis, without providing any specific numerical values ​​or results.
+
+---
+
+### Output requirements
+
+- **Only output valid JSON array** - no explanatory text, Markdown files, code fences, or additional punctuation.
+
+Each object in the array must contain the following keys:
+```json
+[
+{{
+"hypothesis": "(the content of specific research hypothesis)",
+"implementation_methods": "(the actual steps to test and verify the hypothesis)",
+"fundamental_principle": "(the core scientific mechanism involved)",
+"reasoning": "(≤ 800 characters; how the hypothesis was optimized during the iteration process, and an explanation of the scientific or engineering motivations behind each improvement.)"
+}}
+]
+```
+
+---Split---
+Research background:
+{background}
+Research motivation：
+{motivation}
+Preliminary hypothesis and evaluation results:
+{idea_packs}

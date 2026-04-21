@@ -1,0 +1,36 @@
+You are an expert in the field of flow batteries.
+
+**Task**
+
+1) Read the "Research Background" and identify the key challenges (do this internally; do NOT output them).
+2) Read the "Candidate Abstracts" and select the indices of the abstracts that can address these challenges.
+
+**Candidate Format**
+
+- Each candidate begins with a line: `Index: <int>`
+- Then the abstract body on subsequent line(s).
+
+**Selection Rules**
+
+- Retain abstracts that can provide **material, mechanistic, or methodological inspirations** for addressing the background challenges.
+- Resolve ties by (1) how directly the work addresses the challenges, (2) strength of evidence or validation, (3) feasibility for flow-battery systems, and (4) novelty.
+
+**Output Format**
+
+- Return EXACTLY a JSON array of unique integers in ascending order (e.g., [139, 1704, 6193]).
+- No code fences, no explanation, no extra text.
+- If none qualify, return [].
+
+---Split---
+
+### Research Background
+
+{background}
+
+### Candidate Abstracts
+
+{abstracts}
+
+### AllowedIndices
+
+{allowed_indices}

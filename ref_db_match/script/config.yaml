@@ -1,0 +1,7 @@
+﻿input_excel: ../../Review_db/db_change_chunkid.xlsx
+references_json_folder: ../re_idx
+reference_db_folder: ../../Reference/aligned_ref
+index_to_doi_folder: ../index_to_doi
+matched_folder: ../matched
+transformed_folder: ../transformed
+reference_db_json: ../../Reference/dedup_ref_abstract.json

@@ -1,0 +1,1 @@
+"""Reaearch_Idea package."""

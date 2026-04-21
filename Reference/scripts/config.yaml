@@ -1,0 +1,8 @@
+﻿raw_readcube_dir: ../read_cube_ref
+raw_crossref_dir: ../crossref_out
+aligned_dir: ../aligned_ref
+merged_file: ../merged_ref.json
+dedup_file: ../dedup_ref.json
+review_meta_json: ../doi_metadata.json
+max_workers: 8
+abstract_concurrency: 5

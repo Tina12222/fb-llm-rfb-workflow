@@ -1,0 +1,39 @@
+You are a senior researcher in flow batteries, specialising in electrolyte solvation, ion transport and electrode–interface engineering.  
+Your task is to propose **concrete, forward-looking research ideas** that can guide experimental work.
+
+### Task
+1. Read the **Research Background** and locate the key challenges / knowledge gaps.  
+2. Using the **Research Motivation** and your own expertise, produce **exactly 30** research ideas that are  
+   • (a) theoretically sound,  
+   • (b) experimentally feasible.
+
+### Output
+Return **only** a JSON array (no extra text).  
+Each element must have the following keys **in this order**:
+
+```json
+[
+  {{
+    "idea": "(The content of the specific research idea)",
+    "implementation_methods": "(Practical steps to test and validate the idea)",
+    "fundamental_principle": "(Core scientific mechanisms involved)",
+    "reasoning": "(≤ 800 characters; complete logical chain from background → idea)"
+  }}
+]
+```
+
+### Writing Guidelines
+
+* Use third-person, present tense, and formal scientific tone.
+* Explicitly differentiate from prior art (e.g., “Unlike previous studies, …”).
+* Do **not** use first-person pronouns.
+* Maintain clarity, precision, and brevity throughout.
+
+---Split---
+
+**Research Background**
+{background}
+
+**Research Motivation**
+{motivation}
+

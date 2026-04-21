@@ -1,0 +1,22 @@
+Rewrite the query given to you into a clear and concise descriptive statement.
+
+- Rewrite the original question into a statement that summarizes the core intent and keywords, without using interrogative language. For example, "How to improve the energy efficiency of flow batteries at low temperatures?" becomes "Methods to improve the energy efficiency of flow batteries at low temperatures."
+
+- If the query contains multiple questions, break it down into multiple simple statements. For example, "In the flow battery cycle, as the cycle increases, why does the electrode energy efficiency decay, and will the electrode surface undergo irreversible changes after the electrode decays?" becomes:
+1. Factors affecting the energy efficiency of flow battery electrodes.
+2. The effect of electrode decay on surface changes in flow batteries.
+
+### **Guidelines**:
+
+- ** Ensure that the main meaning and focus of the user's query are preserved, including any significant qualifiers, adjectives, and descriptive words (e.g., "best," "most effective").**
+
+- Avoid using interrogative words (such as "how", "which", "why") and use descriptive language.
+- The output should be concise and clear to improve retrieval efficiency.
+- Only provide the rewritten result, without unnecessary explanations or additional text.
+
+---Split---
+
+Please rewrite the following query:
+{query}
+
+Make sure the revised statement accurately captures the intent of the original question in a clear and concise manner, using descriptive language.

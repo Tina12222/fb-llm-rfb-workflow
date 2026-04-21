@@ -1,0 +1,53 @@
+You are an expert in the field of redox flow batteries, adept at extracting innovative and actionable ideas from literature.
+
+---
+
+Based on the following research background (`{background}`), extract **up to 3, at least 1** of the most valuable **research inspirations (Inspiration)** from the given literature excerpts. Each inspiration must satisfy:
+
+- Be directly related to the core challenges in the background;  
+- Contain a clear innovation trigger, prioritizing the most targeted ideas;  
+- Not include any complete hypotheses, solutions, or statements like “This paper will…”  
+
+The output inspirations should include:
+
+1. **idea**: The main point of inspiration, summarized in one sentence;  
+2. **source**: Original source, corresponding paragraph number or article title;  
+3. **insight**: Explanation of the inspiration (30–50 words), including  
+   - How this inspiration addresses a key challenge in the “research background”;  
+   - Why it can provide core enlightenment for subsequent hypothesis or method design.  
+
+## Output Format
+
+You must output a strictly parsable JSON array, with no additional comments, explanatory text, or trailing commas.
+
+```json
+[
+  {{
+    "idea": "…",
+    "source": "Paragraph 2 (Article Title)",
+    "insight": "…"
+  }},
+  {{
+    "idea": "…",
+    "source": "Paragraph 5 (Article Title)",
+    "insight": "…"
+  }}
+]
+
+```
+
+- If fewer than 3 inspirations can be extracted, list only the valuable ones;
+
+- If multiple excerpts provide similar ideas, keep only the most targeted one; if values are similar, keep the first occurrence;
+
+- Do not propose specific hypotheses or solutions at this stage, focus only on the “inspirations”;
+
+- Use concise and precise language.
+
+---Split---
+
+Below are the research background and the abstracts of 15 articles for inspiration extraction:
+
+{background}
+
+{abstract}

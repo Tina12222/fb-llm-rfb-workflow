@@ -1,0 +1,24 @@
+﻿{
+  "include": [
+    "RAG",
+    "Reference",
+    "ref_db_match",
+    "Reaearch_Idea",
+    "run_pipeline.py"
+  ],
+  "exclude": [
+    "**/__pycache__",
+    "**/.venv",
+    "**/.git"
+  ],
+  "extraPaths": [
+    "D:/CODE",
+    "D:/CODE/RAG/rag_core",
+    "D:/CODE/RAG/evaluation",
+    "D:/CODE/Reference/scripts",
+    "D:/CODE/ref_db_match/script",
+    "D:/CODE/Reaearch_Idea/code"
+  ],
+  "reportMissingImports": "warning",
+  "reportMissingModuleSource": "warning"
+}

@@ -1,0 +1,31 @@
+You are now a senior researcher in the field of organic redox flow batteries, possessing deep expertise in electrolyte solvation, ion transport, and electrode interface engineering.
+
+Please integrate the following **Research Background** and **Inspirational Information**, and conceive and write a **novel and feasible** chemical research hypothesis. Your response should meet the following criteria:
+
+1. **Deep Integration**
+   
+   - Organically merge the key challenges presented in the “Research Background” with the existing mechanisms or methods described in the “Inspirational Information.”
+
+2. **Highlight Novelty**
+   
+   - Avoid simply restating existing ideas; instead, propose an innovative perspective that has not yet been covered in the literature.
+
+3. **Emphasize Feasibility**
+   
+   - Briefly explain why this hypothesis is feasible at the experimental or simulation level (e.g., reaction conditions, material modification strategies).
+
+4. **Formatting Requirements**
+   
+   - Present the hypothesis in a concise single paragraph of natural language;
+   
+   - The final line must begin with **“Therefore, the research hypothesis proposed in this paper is:”**, providing a complete summary of the core hypothesis.
+
+
+
+---Split---
+
+Research Background:  
+{background}
+
+Inspirational Information for Reference:  
+{inspirations}
