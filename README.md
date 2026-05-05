@@ -6,6 +6,7 @@ This repository contains modular research code for building a structured review-
 In broad terms, the inputs are raw review-paper text files, reference metadata/abstract collections, and user research queries or motivations. The outputs include structured review databases, retrieval indexes and scores, background text, extracted inspirations, generated hypotheses, novelty assessment files, and evaluation artifacts.
 
 Note: `Reaearch_Idea/` keeps the original directory name for compatibility with existing scripts.
+Important: this GitHub repository does not include the text database data. To run the pipelines, users need to prepare their own datasets and place them in the expected input locations.
 
 ## ✨ Key Features
 - Build a structured review-paper database from raw `.txt` review articles.
@@ -66,6 +67,8 @@ Additional optional variables are listed in `.env.example`, including path overr
 
 ## 🧪 Data Preparation
 Prepare the following inputs before running the main pipelines:
+
+This GitHub repository does not include the review-text database or all derived retrieval data. Users need to prepare these datasets locally before running the code.
 
 1. Review text corpus
 Put raw review `.txt` files in `Review_db/review_text/`.
@@ -188,6 +191,7 @@ Common output locations include `Review_db/`, `.rag/`, `RAG/retrieval/`, `Reaear
 
 ## ⚠️ Notes and Limitations
 - This is modular research code and may require multiple scripts rather than a single end-to-end command.
+- This GitHub repository does not include the text database data, so users must prepare their own datasets locally before running the pipelines.
 - Large datasets, retrieval indexes, API keys, cookies, and private research assets should not be committed to GitHub.
 - Results may depend on the selected LLM API, embedding model (`BAAI/bge-m3`), local environment, and path configuration.
 - Some scripts still rely on user-provided local spreadsheets and intermediate artifacts.
