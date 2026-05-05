@@ -156,9 +156,7 @@ Some filenames keep their original spelling for compatibility with the existing 
 |---|---|---|---|
 | `Review_db/main_review.py` | Build the structured review database from raw review text | `Review_db/review_text/*.txt` | `review_database.pkl`, `review_database.csv`, intermediate processing folders |
 | `Reference/scripts/ref_main.py` | Build and enrich external reference resources | Review metadata JSON/YAML and pipeline config | Merged, deduplicated, and abstract-enriched reference files |
-| `ref_db_match/script/ra_main.py` | Match citation indices back to DOI/metadata and write results to Excel | Input Excel, reference DB JSON, config YAML | Matched JSON folders and updated Excel content |
 | `RAG/rag_core/main.py` | Run the main retrieval pipeline for a user query | Query text, review/reference spreadsheets, BM25/FAISS artifacts | Ranked retrieval results in console/log output |
-| `RAG/evaluation/CHUNK_SEARCH.py` | Run hybrid retrieval evaluation on batch queries | Excel with `query` column | Result Excel and retrieval log |
 | `Reaearch_Idea/code/background.py` | Generate background text from retrieved review content | DB/index artifacts and a user query | `background_<workspace>.txt` and logs |
 | `Reaearch_Idea/code/inspiration_generation.py` | Extract inspirations from an abstract corpus | Background text and abstract spreadsheet | Inspiration `.txt/.json` files |
 | `Reaearch_Idea/code/hypothesis_generation.py` | Generate hypotheses from inspirations | Background text, inspiration JSON, user motivation | Hypothesis `.txt/.json` files |
