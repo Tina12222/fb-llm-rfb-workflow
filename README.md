@@ -164,20 +164,6 @@ Some filenames keep their original spelling for compatibility with the existing 
 | `Reaearch_Idea/code/hypothesis_generation.py` | Generate hypotheses from inspirations | Background text, inspiration JSON, user motivation | Hypothesis `.txt/.json` files |
 | `Reaearch_Idea/code/novelty_evaluate.py` | Evaluate novelty and feasibility using retrieved abstracts | Idea JSON, reference data, retrieval artifacts | `novelty_judgement_results_round*.json` |
 
-More detailed script notes are available in [docs/SCRIPTS.md](docs/SCRIPTS.md).
-
-## 🔁 Reproducing Results
-This repository is best understood as modular research code rather than a one-command reproduction package.
-
-A practical reproduction order is:
-1. Build the structured review database with `Review_db/main_review.py`.
-2. Prepare reference assets with `Reference/scripts/ref_main.py` and `ref_db_match/script/ra_main.py`.
-3. Build or provide the embedding, BM25, and FAISS artifacts used by `RAG/`.
-4. Run retrieval and evaluation scripts in `RAG/`.
-5. Run the LLM-assisted workflow in `Reaearch_Idea/code/`.
-
-TODO:
-- Add the exact final experiment settings and parameter combinations after paper publication.
 
 ## 📂 Outputs
 Typical outputs include:
@@ -198,8 +184,7 @@ Common output locations include `Review_db/`, `.rag/`, `RAG/retrieval/`, `Reaear
 - The exact final paper experiment parameters should be documented after publication.
 
 ## 📖 Citation
-If you use this code, please cite:  
-TODO: add paper citation after publication.
+If you use this code, please cite.
 
 ## 📄 License
 This repository includes a root `LICENSE` file. Please follow that license for reuse and distribution.
